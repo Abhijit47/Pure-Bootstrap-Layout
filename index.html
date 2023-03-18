@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure Bootstarp Layout</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <!-- Bootstrap ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- Bootstrap local -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-person fs-1 text-warning"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-light dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li>
+                  <a class="dropdown-item text-light" href="#">Project 1</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Project 2</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Project 3</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Project 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="input-group"
+              type="search"
+              placeholder="Search"
+              aria-label="Search" />
+            <label for="search" class="input-group-text" role="button"
+              ><i class="bi bi-search"></i
+            ></label>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main section start -->
+    <main class="container-fluid gx-0">
+      <!-- Hero Section -->
+      <section
+        class="container-fluid d-flex justify-content-center align-items-center bg-info"
+        style="height: 85vh">
+        <div class="row gap-3">
+          <h1 class="text-center display-3">
+            <span class="text-warning">Welcome to our page</span>
+            <span class="fw-semibold text-white">Website</span>
+          </h1>
+
+          <p class="text-center text-white fst-italic fs-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <a href="#" class="btn btn-warning">Register</a>
+            <a href="#" class="btn btn-danger">Login</a>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- skills section -->
+      <section class="container-fluid bg-dark-subtle pb-5 pt-5">
+        <div class="row">
+          <h1 class="text-warning fs-1 text-center">Skills</h1>
+          <p class="text-muted text-center fs-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="row justify-content-center gap-5">
+          <!-- card 1 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-img-top text-center display-1">
+              <i
+                class="fa-solid fa-desktop fw-bold text-warning"
+                style="font-size: 4.5rem !important"></i>
+            </div>
+            <div
+              class="row gx-0 flex-column justify-content-between align-items-center p-3">
+              <h3 class="text-center">Developement</h3>
+              <p class="text-center text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos ipsam, incidunt laudantium quia laborum nobis.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Know more</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-img-top text-center display-1">
+              <i
+                class="fa-solid fa-pen-to-square fw-bold text-warning"
+                style="font-size: 4.5rem !important"></i>
+            </div>
+            <div
+              class="row gx-0 flex-column justify-content-between align-items-center p-3">
+              <h3 class="text-center">Design</h3>
+              <p class="text-center text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos ipsam, incidunt laudantium quia laborum nobis.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Know more</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card" style="width: 18rem">
+            <div class="card-img-top text-center display-1">
+              <i
+                class="fa-solid fa-gears fw-bold text-warning"
+                style="font-size: 4.5rem !important"></i>
+            </div>
+            <div
+              class="row gx-0 flex-column justify-content-between align-items-center p-3">
+              <h3 class="text-center">Creativity</h3>
+              <p class="text-center text-black-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos ipsam, incidunt laudantium quia laborum nobis.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Know more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills section end -->
+
+      <!-- Projects section start -->
+      <section class="container-fluid bg-info-subtle pt-5 pb-5">
+        <div class="row">
+          <h1 class="text-warning fs-1 text-center">Projects</h1>
+          <p class="text-muted text-center fs-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Project cards -->
+        <div class="row justify-content-center gap-4 pb-5 gx-0">
+          <!-- card 1 -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2JTIwcHJvamVjdHMlMjBpbWFnZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="card1" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Project 1</h5>
+              <p class="card-text text-black-50">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates repellat magnam.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BlbWVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="card1" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Project 2</h5>
+              <p class="card-text text-black-50">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates repellat magnam.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYiUyMGRldmVsb3BlbWVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="card1" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Project 3</h5>
+              <p class="card-text text-black-50">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates repellat magnam.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.unsplash.com/photo-1573164574472-797cdf4a583a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYiUyMGRldmVsb3BlbWVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="card1" />
+            <div class="card-body">
+              <h5 class="card-title text-warning">Project 4</h5>
+              <p class="card-text text-black-50">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates repellat magnam.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <!-- cards end here -->
+        </div>
+      </section>
+      <!-- Projects section end -->
+
+      <!-- Team section start -->
+      <section class="container-fluid bg-success-subtle pt-5 pb-5">
+        <div class="row">
+          <h1 class="text-warning fs-1 text-center">Team</h1>
+          <p class="text-muted text-center fs-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="row justify-content-center gap-5 pb-5 gx-0">
+          <!-- Team mates card 1 -->
+          <div class="card" style="width: 20rem">
+            <img
+              src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbGR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="team mates" />
+            <div class="card-body">
+              <h5 class="card-title">Michael</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- card social icons -->
+            <div
+              class="d-flex justify-content-end gap-3 align-items-center pb-2 pe-2">
+              <a href="#" role="button">
+                <i
+                  class="fab fa-facebook-square fs-3 text-primary link-primary"></i>
+              </a>
+              <a href="#" role="button">
+                <i class="fab fa-twitter-square fs-3 text-info link-info"></i>
+              </a>
+              <a href="#" role="button">
+                <i
+                  class="fab fa-youtube-square fs-3 text-danger link-danger"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Team mates card 2 -->
+          <div class="card" style="width: 20rem">
+            <img
+              src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpbGR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="team mates" />
+            <div class="card-body">
+              <h5 class="card-title">Jack</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- card social icons -->
+            <div
+              class="d-flex justify-content-end gap-3 align-items-center pb-2 pe-2">
+              <a href="#" role="button">
+                <i
+                  class="fab fa-facebook-square fs-3 text-primary link-primary"></i>
+              </a>
+              <a href="#" role="button">
+                <i class="fab fa-twitter-square fs-3 text-info link-info"></i>
+              </a>
+              <a href="#" role="button">
+                <i
+                  class="fab fa-youtube-square fs-3 text-danger link-danger"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Team mates card 3 -->
+          <div class="card" style="width: 20rem">
+            <img
+              src="https://images.unsplash.com/photo-1593992811641-f713353cdebc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNoaWxkfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top"
+              alt="team mates" />
+            <div class="card-body">
+              <h5 class="card-title">Ann</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- card social icons -->
+            <div
+              class="d-flex justify-content-end gap-3 align-items-center pb-2 pe-2">
+              <a href="#" role="button">
+                <i
+                  class="fab fa-facebook-square fs-3 text-primary link-primary"></i>
+              </a>
+              <a href="#" role="button">
+                <i class="fab fa-twitter-square fs-3 text-info link-info"></i>
+              </a>
+              <a href="#" role="button">
+                <i
+                  class="fab fa-youtube-square fs-3 text-danger link-danger"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team section end -->
+
+      <!-- Progress section start -->
+      <section class="container-fluid bg-dark-subtle pt-5 pb-5">
+        <div class="row">
+          <h1 class="text-warning fs-1 text-center">Progress</h1>
+          <p class="text-muted text-center fs-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <!-- Skill bar start -->
+        <div class="row gx-0 w-50 mx-auto p-2 gap-2">
+          <h3 class="fs-6 fw-bold">HTML</h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated text-end"
+              style="width: 95%">
+              95%
+            </div>
+          </div>
+          <h3 class="fs-6 fw-bold">CSS</h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated text-end"
+              style="width: 85%">
+              85%
+            </div>
+          </div>
+          <h3 class="fs-6 fw-bold">JavaScript</h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated text-end"
+              style="width: 65%">
+              65%
+            </div>
+          </div>
+          <h3 class="fs-6 fw-bold">Bootstrap</h3>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated text-end"
+              style="width: 75%">
+              75%
+            </div>
+          </div>
+        </div>
+        <!-- Skill bar end -->
+      </section>
+      <!-- Progress section end -->
+
+      <!-- CTA Section Start -->
+      <section class="container-fluid bg-success-subtle pt-5 pb-5">
+        <div class="row">
+          <h1 class="text-warning fs-1 text-center text-capitalize">
+            Contact us
+          </h1>
+          <p class="text-muted text-center fs-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="row">
+          <h3 class="text-center fs-4 text-dark-emphasis fw-semibold">
+            Got Question ?
+          </h3>
+          <p class="text-center text-black-50">Stay connected</p>
+        </div>
+        <div class="row col col-md-6 mx-auto p-3 gap-2 gx-0">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Your name" />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Your email"
+            required />
+          <label for="msg">Message</label>
+          <textarea
+            name="msg"
+            id="msg"
+            cols="60"
+            rows="3"
+            class="form-control"
+            placeholder="Your message"></textarea>
+          <button class="btn btn-outline-warning">Submit Question</button>
+        </div>
+      </section>
+      <!-- CTA Section end -->
+    </main>
+    <!-- Main section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div
+        class="container-fluid d-flex flex-column gap-3 bg-secondary pt-5 pb-5">
+        <div class="row">
+          <h3 class="text-white fs-2 text-center">Pure Bootstrap Project</h3>
+          <p class="text-white text-center fs-4 fst-italic">
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="d-flex gap-4 justify-content-center">
+          <a href="#" role="button">
+            <i
+              class="fab fa-facebook-square fs-2 text-primary link-primary"></i>
+          </a>
+          <a href="#" role="button">
+            <i
+              class="fab fa-google-plus-square fs-2 text-danger link-danger"></i>
+          </a>
+          <a href="#" role="button">
+            <i class="fab fa-twitter-square fs-2 text-info link-info"></i>
+          </a>
+          <a href="#" role="button">
+            <i class="fab fa-youtube-square fs-2 text-danger link-danger"></i>
+          </a>
+        </div>
+
+        <p class="text-center text-white">
+          &copy;Copyright 2023&nbsp;&#45;&nbsp;Made with&nbsp;
+          <i class="fas fa-heart text-primary"></i>&nbsp;by Abhijit
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Script JS Start-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
